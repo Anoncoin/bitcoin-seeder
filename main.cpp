@@ -400,6 +400,7 @@ int main(int argc, char **argv) {
   vSeeds.insert(vSeeds.end(), opts.vSeeds.begin(), opts.vSeeds.end());
   if (opts.vSeeds.empty()) {
     vSeeds.push_back("seed.frank2.net");
+    vSeeds.push_back("anc.dnsseed01.anoncoin.darkgamex.ch");
     vSeeds.push_back("dnsseed03.anoncoin.net");
   }
   if (opts.tor) {
