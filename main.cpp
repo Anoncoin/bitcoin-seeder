@@ -399,11 +399,8 @@ int main(int argc, char **argv) {
   vSeeds.reserve(vSeeds.size() + opts.vSeeds.size());
   vSeeds.insert(vSeeds.end(), opts.vSeeds.begin(), opts.vSeeds.end());
   if (opts.vSeeds.empty()) {
-    vSeeds.push_back("kjy2eqzk4zwi5zd3.onion");
-    vSeeds.push_back("dnsseed.bluematt.me");
-    vSeeds.push_back("bitseed.xf2.org");
-    vSeeds.push_back("dnsseed.bitcoin.dashjr.org");
-    vSeeds.push_back("seed.bitcoin.sipa.be");
+    vSeeds.push_back("seed.frank2.net");
+    vSeeds.push_back("dnsseed03.anoncoin.net");
   }
   if (opts.tor) {
     CService service(opts.tor, 9050);
