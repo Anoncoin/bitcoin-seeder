@@ -399,6 +399,11 @@ int main(int argc, char **argv) {
   vSeeds.reserve(vSeeds.size() + opts.vSeeds.size());
   vSeeds.insert(vSeeds.end(), opts.vSeeds.begin(), opts.vSeeds.end());
   if (opts.vSeeds.empty()) {
+    vSeeds.push_back("seed.anoncash.net");
+    vSeeds.push_back("seed2.anoncash.net");
+    vSeeds.push_back("seed3.anoncash.net");
+    vSeeds.push_back("seed4.anoncash.net");
+    vSeeds.push_back("seed5.anoncash.net");
     vSeeds.push_back("seed.frank2.net");
     vSeeds.push_back("anc.dnsseed01.anoncoin.darkgamex.ch");
     vSeeds.push_back("dnsseed03.anoncoin.net");
